@@ -3,4 +3,4 @@ venv/
 .env
 
 # Ignore PDFs and other kind of resources
-**/resources/
+1-Langchain/3.2-DataIngestion/resources/attention.pdf
