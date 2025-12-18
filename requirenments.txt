@@ -16,3 +16,4 @@ faiss-cpu
 langchain_chroma
 streamlit
 langchain-ollama
+langchain-groq
