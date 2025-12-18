@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "localhost:8000/chain/batch",
+			"name": "/chain/batch",
 			"request": {
 				"auth": {
 					"type": "noauth"
@@ -32,6 +32,37 @@
 					"path": [
 						"chain",
 						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/chain/invoke",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"input\": {\n    \"language\": \"Spanish\",\n    \"text\": \"Hello my name is Luis\"\n  },\n  \"config\": {},\n  \"kwargs\": {\n    \"additionalProp1\": {}\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/chain/invoke",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"chain",
+						"invoke"
 					]
 				}
 			},
