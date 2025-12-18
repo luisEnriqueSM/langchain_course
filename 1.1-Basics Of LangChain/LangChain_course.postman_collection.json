@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "9cc959b1-be00-41cc-93f2-789f52f4510a",
+		"name": "LangChain_course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34456949"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/chain/batch",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"inputs\": [\n    {\n      \"language\": \"Spanish\",\n      \"text\": \"Hello how are you?\"\n    }\n  ],\n  \"config\": {},\n  \"kwargs\": {\n    \"additionalProp1\": {}\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/chain/batch",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"chain",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
